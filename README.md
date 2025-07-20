@@ -14,14 +14,17 @@ This project was created as part of a university web development course, and sho
 ## Screenshots
 ![Homepage](screenshots/homepage.jpeg)
 ![Student management homepage](screenshots/student_management.jpeg)
-![Add a student](screenshots/add_students.jpeg)
-![Modify a Book](screenshots/Modify_book.jpeg)
+![Add a student](screenshots/add_student.jpeg)
+![Modify a Book](screenshots/modify_book.jpeg)
 ![Return a Book](screenshots/transaction_book.jpeg)
 
 ## Tech Stack
 **Frontend**: HTML, CSS, JavaScript
+
 **Backend**: PHP
+
 **Database**: MySQL
+
 **Server**: Localhost (XAMPP / WAMP / MAMP)
 
 ## Setup Instructions
@@ -33,7 +36,7 @@ Create a the database by importing the data in the Data base folder
 3. Run the app:
 Start your Apache & MySQL servers.
 
-##License
+## License
 * For educational purposes only. *
 
 📚 Notes
