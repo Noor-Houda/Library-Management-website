@@ -13,9 +13,9 @@ This project was created as part of a university web development course, and sho
 
 ## Screenshots
 ![Homepage](screenshots/homepage.jpeg)
-![Student management homepage](screenshots/student_management.jpeg)
+![Student management homepage](screenshots/student_mangement.jpeg)
 ![Add a student](screenshots/add_student.jpeg)
-![Modify a Book](screenshots/modify_book.jpeg)
+![Modify a Book](screenshots/modifiy_book.jpeg)
 ![Return a Book](screenshots/transaction_book.jpeg)
 
 ## Tech Stack
@@ -42,15 +42,3 @@ Start your Apache & MySQL servers.
 📚 Notes
 This was an early dynamic project to demonstrate CRUD operations, form handling, and connecting a frontend to a backend with a database.
 The project lacks some features of a full production-ready system.
-
-
-
-
-
-
-
-
-
-
-Ask ChatGPT
-
