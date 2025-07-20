@@ -35,6 +35,10 @@ Open your local MySQL (e.g., phpMyAdmin).
 Create a the database by importing the data in the Data base folder
 3. Run the app:
 Start your Apache & MySQL servers.
+4. Move the files:
+Copy the files (except for the database folder) in the directory where the web-server could read it:
+  - XAMPP : ```C:\xampp\htdocs```
+  - WAMPP : ```C:\wamp\www```
 
 ## License
 * For educational purposes only. *
