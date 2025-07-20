@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #EEF0F7;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  animation-name: loading;
+  animation-duration: 2s;
+}
+
+.container {
+  background-color: #fff;
+  width: 900px;
+  height: 500px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  line-height: 1.5;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to bottom right, #255447, #40826D);
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  z-index: -1;
+
+}
+
+@keyframes loading {
+  0%{ opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.container img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container-text {
+  padding: 10px 40px 10px 10px;
+}
+
+.container-text h2 {
+  font-size: 1.2rem;
+  color: #1A2250;
+}
+
+.container-text p {
+  font-size: 14px;
+  color: #3B4169;
+  margin: 10px 0;
+}
+
+.container-text input,
+.container-text button,
+#options {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 3px;
+}
+
+.container-text input,
+#options{
+  border: 2px solid #DADDEC;
+  margin: 5px 0 10px;
+  font-size: 1rem;
+  color: #656880;
+}
+
+.container-text button {
+  background-image: linear-gradient(to right, #255447, #40826D);
+  color:#E6E6E6;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow .3s ease-in-out;
+}
+
+#buttons{
+  display: flex;
+  justify-items: center;
+  gap: 3px;
+}
+
+#container-Mother{
+  display: grid;
+  grid-template-columns: [s] 10% [m] 90% [e];
+  gap: 5%;
+}
+#nav{
+  width: 100%;
+  background-color:#fff;
+  grid-column: s/m;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+  padding-top: 40%;
+  padding-bottom: 40%;
+  display: grid;
+  grid-template-rows: [s] 20% [m1] 20% [m2] 20% [m3]20% [e];
+  justify-items: center;
+  align-items: center;
+  gap: 5%;
+}
+#add{
+  grid-row: s/m1 ;
+}
+#ret{
+  grid-row: m1/m2;
+}
+#list{
+  grid-row: m2/m3;
+}
+#home{
+  grid-row: m3/e;
+}

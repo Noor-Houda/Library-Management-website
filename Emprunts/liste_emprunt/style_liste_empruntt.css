@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('books.jpg');
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  animation-name: loading;
+  animation-duration: 2s;
+}
+
+.container {
+  padding-top: 5%;
+  background-color: #fff;
+  width: 1100px;
+  height:auto;
+  min-height: 110vh;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  line-height: 1.5;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+  animation-name: expand;
+  animation-duration: 2s;
+}
+
+@keyframes loading {
+  0%{ opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes expand {
+  0%{ width: 900px }
+  100%{width: 1100px  }
+}
+
+.container-text {
+  padding: 10px 40px 10px 10px;
+}
+
+.container-text h2 {
+  font-size: 1.2rem;
+  color: #1A2250;
+  text-align: center;
+}
+
+.container-text p {
+  font-size: 14px;
+  color: #3B4169;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#tab th{
+  margin: 2%;
+  background-color:#255447;
+  color: #fff;
+  width: 100vh;
+}
+#tab{
+  text-align: center;
+}
+
+#container-Mother{
+  margin: 5%;
+  display: grid;
+  grid-template-columns: [s] 10% [m] 90% [e];
+  align-items: center;
+  gap: 3%;
+}
+#nav{
+  width: 75%;
+  height: 50%;
+  background-color:#fff;
+  grid-column: s/m;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+  padding-top: 40%;
+  padding-bottom: 40%;
+  display: grid;
+  grid-template-rows: [s] 20% [m1] 20% [m2] 20% [m3]20% [e];
+  justify-items: center;
+  align-items: center;
+  gap: 5%;
+}
+#add{
+  grid-row: s/m1 ;
+}
+#ret{
+  grid-row: m1/m2;
+}
+#list{
+  grid-row: m2/m3;
+}
+#home{
+  grid-row: m3/e;
+}
